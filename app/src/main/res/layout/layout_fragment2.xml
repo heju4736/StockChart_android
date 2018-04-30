@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/frag2_1btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ff0000" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/search_img" />
+
+            <TextView
+                android:id="@+id/text2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="종목진단 검색기"
+                android:textColor="@color/textGray"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:text="|"
+            android:textColor="@color/textGray"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/frag2_2btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ff0000" />
+
+            <TextView
+                android:id="@+id/text2_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="종목진단 조건 검색"
+                android:textColor="@color/textLightColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/mainColor"
+        android:orientation="horizontal"></LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frag2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</LinearLayout>

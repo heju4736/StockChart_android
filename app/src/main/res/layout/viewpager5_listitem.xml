@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/frag5_listcoment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="이용중 상품"
+        android:layout_marginLeft="15dp"
+        android:textSize="17dp"
+        android:textColor="@color/textGray"
+        android:layout_gravity="center"
+        android:gravity="left|center"/>
+
+</LinearLayout>

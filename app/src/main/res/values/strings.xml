@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopcornStock_test</string>
+    <string name="kakao_app_key">06cb52d87eb8f42904e94a5e413b9137</string>
+    <string name="msg">Please enable all permission</string>
+</resources>

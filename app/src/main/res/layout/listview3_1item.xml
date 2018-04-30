@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="65dp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/img3_1"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_pop3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/id3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:paddingTop="5dp"
+                android:text="바오오오오오밥"
+                android:textColor="@color/textGray"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="7dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/heart"
+                    android:text="♥" />
+
+                <TextView
+                    android:id="@+id/text13_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="999"
+                    android:textColor="@color/hearttextColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="|"
+                    android:id="@+id/ranktxt1"
+                    android:textColor="@color/textLightColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/text23_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="신생"
+                    android:textColor="@color/newtextColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="|"
+                    android:id="@+id/ranktxt2"
+                    android:textColor="@color/textLightColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/text33_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="신규랭킹 1위"
+                    android:textColor="@color/newrankColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="|"
+                    android:id="@+id/ranktxt3"
+                    android:textColor="@color/textLightColor"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:id="@+id/text43_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="인공지능"
+                    android:textColor="@color/robotColor"
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="737.07"
+            android:textSize="20dp"
+            android:id="@+id/num3_1"
+            android:gravity="center|right"
+            android:textColor="@color/ranknumColor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_weight="0.01">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="%"
+            android:textSize="20dp"
+            android:id="@+id/num777_1"
+            android:gravity="center|right"
+            android:textColor="@color/ranknumColor"/>
+
+    </LinearLayout>
+
+</LinearLayout>

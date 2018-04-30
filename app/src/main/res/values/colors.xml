@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="mainColor">#50A7BB</color>
+    <color name="textGray">#333333</color>
+    <color name="backColor">#DDDDDD</color>
+    <color name="textLightColor">#616161</color>
+    <color name="viewBtnColor">#F5F5F5</color>
+    <color name="freepopBack">#D2D2D2</color>
+    <color name="hearttextColor">#FB3B3B</color>
+    <color name="newtextColor">#26AB19</color>
+    <color name="newrankColor">#AF14E6</color>
+    <color name="robotColor">#1D99F9</color>
+    <color name="ranknumColor">#C23041</color>
+    <color name="gray1">#E5E5E5</color>
+    <color name="backGray">#EEEEEE</color>
+    <color name="bakbackColor">#D4DFE1</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#48AA21</color>
+    <color name="exportRed">#E64A45</color>
+    <color name="expert_blue">#4B6BE3</color>
+    <color name="expert_textBlack">#333333</color>
+    <color name="listline">#CFCFCF</color>
+    <color name="cusor">#e64a45</color>
+    <color name="listviewLine">#D5D5D5</color>
+</resources>

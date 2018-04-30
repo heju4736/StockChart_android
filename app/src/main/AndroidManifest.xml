@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jdk.popcornstock_test">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    - <!--  To auto-complete the email text field in the login form with the user's emails
+  -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.nfc" android:required="false" />
+    <uses-feature android:name="android.hardware.Camera" android:required="false" />
+
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="팝콘스탁"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FirebaseInstanceIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Bottombar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key" />
+
+        <activity android:name=".Login"
+            android:noHistory="true" android:screenOrientation="portrait" />
+
+        <activity android:name=".KakaoSignupActivity"
+            android:noHistory="true" android:screenOrientation="portrait" />
+
+        <activity android:name=".Intro"
+            android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Join"
+            android:noHistory="true" android:screenOrientation="portrait" />
+
+        <activity android:name=".ExpertPage" />
+        <activity android:name=".marketpowerTest" />
+        <activity android:name=".LoadingBar" />
+        <activity android:name=".NickEdit" />
+        <activity android:name=".Img_Expand" />
+        <activity android:name=".JongmokLoading" />
+
+    </application>
+
+</manifest>

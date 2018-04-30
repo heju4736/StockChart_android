@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/img_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:paddingTop="7dp">
+
+        <ImageButton
+            android:id="@+id/profile_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/img_close"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="right"/>
+
+        <ImageView
+            android:id="@+id/img_expand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/friend_add"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="center|top">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_pop1" />
+
+                <Button
+                    android:id="@+id/img_edit_Btn"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#00ff0000" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/hp_text"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="aaa"
+                        android:textColor="#00ff0000" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nick_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:text="바오오오밥"
+                            android:textColor="@color/textGray"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="17dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center|top"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/id_editimg" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/nickEdit_Btn"
+                        android:layout_width="125dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginLeft="10dp"
+                        android:background="#00ff0000"
+                        android:onClick="NickSet" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/backColor"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="4dp"
+                android:paddingLeft="17dp"
+                android:paddingTop="4dp">
+
+                <Button
+                    android:id="@+id/usingProduct_Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/product" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center"
+                            android:text="이용중 상품"
+                            android:textColor="@color/textGray"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/backColor"></LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="4dp"
+                android:paddingLeft="17dp"
+                android:paddingTop="4dp">
+
+                <Button
+                    android:id="@+id/readingList_Btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ff0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/read" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:gravity="center"
+                            android:text="구독 리스트"
+                            android:textColor="@color/textGray"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/backColor"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:layout_weight="1"
+                android:background="@drawable/alarm" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:layout_weight="1"
+                android:background="@drawable/friend_add" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="91dp"
+                android:layout_weight="1"
+                android:background="@drawable/customerservice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:background="@color/backColor"></LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

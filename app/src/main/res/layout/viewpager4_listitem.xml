@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="13dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="13dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="12dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/companyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="스튜디오드래곤"
+                    android:textColor="@color/textGray"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="center|left"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="시장주목도"
+                    android:gravity="center|left"
+                    android:textSize="14dp"
+                    android:layout_weight="0.03"/>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1">
+
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/progress_bar"
+                        android:layout_width="70dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="left"
+                        android:visibility="gone"
+                        android:background="@drawable/progress_bar"
+                        />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="left"
+                        android:background="@drawable/progress_img"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.4">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="▲"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/ranknumColor"/>
+
+            <TextView
+                android:id="@+id/percent_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10"
+                android:layout_gravity="center"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/ranknumColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="% 이상"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/ranknumColor"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <ImageButton
+                android:id="@+id/jong_Btn"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/jongmok_ok"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textLightColor"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/backGray"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/expandable_Btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00ff0000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="팝콘 분석"
+            android:textColor="@color/textGray"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:gravity="center|left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="자세히보기"
+            android:textSize="14dp"
+            android:textColor="@color/textLightColor"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:layout_marginRight="20dp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textLightColor"></LinearLayout>
+
+    <LinearLayout
+        android:paddingLeft="25dp"
+        android:paddingRight="23dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/backGray"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMMENT"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/textLightColor"/>
+
+    <TextView
+        android:id="@+id/comment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스튜디오드래곤, +29.84% 상한가
+                      dfdfdfdfdfdfdfdfdfdfdfdfdfd
+                      dfdf
+                      dfdf"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:id="@+id/comment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="스튜디오드래곤, +29.84% 상한가
+dfd
+dfdf
+dfdf
+dfdf
+dfdf"
+        android:textSize="13dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연관 테마"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textLightColor"/>
+
+    <TextView
+        android:id="@+id/comment3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="스튜디오드래곤, +29.84% 상한가
+dfd
+dfd"
+        android:textSize="13dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
