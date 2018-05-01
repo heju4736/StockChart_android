@@ -49,11 +49,6 @@
 - 명시된 SDK Version 다운
 - NDK 다운
 - Google Play Serveice compile 하기
-- Push가 올 경우 화면이 켜지게 하기
-  - AndroidManifest.xml
-    ```Android
-      <uses-permission android:name="android.permission.WAKE_LOCK" />
-    ```
 - Firebase에 프로젝트를 만들고 생성된 json파일을 Android Studio에 참조
   - AndroidManifest.xml
     ```Android
