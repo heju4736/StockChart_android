@@ -139,3 +139,9 @@
  ### 7. Change Log
  
  - 2018-04-30 기록을위해 커밋
+ 
+ ### 8. Firebase Server 연동에 관한 Github로 이동
+ 
+ - 아래를 클릭해주세요.
+
+   [FirebasePushServer](https://github.com/heju4736/FirebasePushWebserver)
